@@ -21,23 +21,24 @@ body {
 }
 
 /* Header */
-.header {
+ /*.header {
     background: #0B5ED7;
     color: white;
     position: sticky;
     top: 0;
     z-index: 100;
     box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-}
+}*/
 
-.nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.header {
+    background: #ffffff;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
 }
-
 nav a {
-    color: white;
+    color: #0B5ED7;
     margin-left: 20px;
     text-decoration: none;
     font-weight: 600;
@@ -75,7 +76,7 @@ nav a:hover {
 }
 
 .hero {
-    background: url('images/hero.jpg') center/cover no-repeat;
+    background: url('assets/hero.jpg') center/cover no-repeat;
     position: relative;
     padding: 120px 20px;
     color: white;
@@ -168,4 +169,32 @@ form button {
     .cta { margin-top: 10px; }
     .hero h1 { font-size: 2rem; }
     .hero p { font-size: 1rem; }
+}
+.logo img {
+    height: 55px;
+    width: auto;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+}
+
+.logo img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-text {
+    font-size: 25px;
+    font-weight: 700;
+    color: #1a1a1a;
 }
